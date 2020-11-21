@@ -15,7 +15,7 @@ Key take aways in programming
 
 All the frameworks or services I have frequently have to work with:
 
-- [AWS](tech/aws/index.md)
+- [AWS](tech/aws/)
 - [Docker](tech/docker/index.md)
 - [ElasticSearch](tech/elasticsearch/index.md)
 - [Kafka](tech/kafka/index.md)
