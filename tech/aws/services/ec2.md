@@ -8,11 +8,11 @@ An EC2 instance runs within an Availability Zone.
 
 ## Instance Types
 
-- *General purpose*: Balanced CPU and RAM
-- *Compute optimized*: High amount of CPU 
-- *Memory optimized*: Large amount of RAM
-- *Storage optimized*: Large amount of I/O throughput
-- *Accelerated computing*: e.g. FPGAs or GPUs
+- **General purpose**: Balanced CPU and RAM
+- **Compute optimized**: High amount of CPU 
+- **Memory optimized**: Large amount of RAM
+- **Storage optimized**: Large amount of I/O throughput
+- **Accelerated computing**: e.g. FPGAs or GPUs
 
 To change the hardware allocation, you have to stop the instance.
 
