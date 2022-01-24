@@ -1,0 +1,3 @@
+[submodule "tech/keycloak/books/packt_keycloak/Keycloak-Identity-and-Access-Management-for-Modern-Applications"]
+	path = tech/keycloak/books/packt_keycloak/Keycloak-Identity-and-Access-Management-for-Modern-Applications
+	url = git@github.com:PacktPublishing/Keycloak-Identity-and-Access-Management-for-Modern-Applications.git

@@ -6,4 +6,5 @@ All the frameworks or services I have frequently have to work with:
 - [Docker](docker/index.md)
 - [ElasticSearch](elasticsearch/index.md)
 - [Kafka](kafka/index.md)
+- [Keycloak](keycloak/index.md)
 - [Kubernetes](kubernetes/index.md)
