@@ -5,6 +5,8 @@ If this section doesn't contain a certain topic, I might still know a lot about 
 
 # Algorithms
 
+- [Heap Sort](./alg/heapsort/index.md)
+
 # Data Structures
 
 - [Heap](./ds/heap/index.md)
