@@ -1,3 +1,6 @@
 [submodule "tech/keycloak/books/packt_keycloak/Keycloak-Identity-and-Access-Management-for-Modern-Applications"]
 	path = tech/keycloak/books/packt_keycloak/Keycloak-Identity-and-Access-Management-for-Modern-Applications
 	url = git@github.com:PacktPublishing/Keycloak-Identity-and-Access-Management-for-Modern-Applications.git
+[submodule "prog/python/books/flask_web_development/flasky"]
+	path = prog/python/books/flask_web_development/flasky
+	url = git@github.com:miguelgrinberg/flasky
