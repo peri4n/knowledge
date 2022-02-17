@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 02a5033341e52acd117d74670f25e7b758f3323adf43e0eaa08f0fd8d012aed6
+-- hash: b482165d523b37df7c55980206eaf27b2162867b22bd58c7a24189ad0ea57af7
 
 name:           hauth
 version:        0.0.0.1
@@ -76,6 +76,7 @@ test-suite hauth-test
     , base >=4.7 && <5
     , classy-prelude
     , hauth
+    , hspec
     , pcre-heavy
     , template-haskell
     , time
