@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0bd9dc5d6aecbe4ed93fdf76e87ae34aadf1fb856439d67fd4c09aaf3b29b45d
+-- hash: 2ad44bd1a47de4fc873e9409eaa7d0a95bc9063b377542a70fbca83a4ce81f74
 
 name:           hauth
 version:        0.0.0.1
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Adapter.InMemory.Auth
       Domain.Auth
       Domain.Validation
       Lib
@@ -34,11 +35,13 @@ library
       Paths_hauth
   hs-source-dirs:
       src
-  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell
+  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts
   build-depends:
       aeson
     , base >=4.7 && <5
     , classy-prelude
+    , data-has
+    , mtl
     , pcre-heavy
     , template-haskell
     , time
@@ -50,13 +53,15 @@ executable hauth-exe
       Paths_hauth
   hs-source-dirs:
       app
-  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell
+  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
     , base >=4.7 && <5
     , classy-prelude
+    , data-has
     , hauth
+    , mtl
     , pcre-heavy
     , template-haskell
     , time
@@ -71,14 +76,16 @@ test-suite hauth-test
       Paths_hauth
   hs-source-dirs:
       test
-  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell
+  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
     , base >=4.7 && <5
     , classy-prelude
+    , data-has
     , hauth
     , hspec
+    , mtl
     , pcre-heavy
     , template-haskell
     , time
