@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b482165d523b37df7c55980206eaf27b2162867b22bd58c7a24189ad0ea57af7
+-- hash: 0bd9dc5d6aecbe4ed93fdf76e87ae34aadf1fb856439d67fd4c09aaf3b29b45d
 
 name:           hauth
 version:        0.0.0.1
@@ -66,6 +66,8 @@ test-suite hauth-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Domain.AuthSpec
+      Domain.ValidationSpec
       Paths_hauth
   hs-source-dirs:
       test
