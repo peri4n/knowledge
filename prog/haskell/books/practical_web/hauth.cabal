@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2ad44bd1a47de4fc873e9409eaa7d0a95bc9063b377542a70fbca83a4ce81f74
+-- hash: aca4914d8aab2f1ded74ab08a2135a569fe33ba33a7ebc48e751cf7d553637a2
 
 name:           hauth
 version:        0.0.0.1
@@ -35,7 +35,7 @@ library
       Paths_hauth
   hs-source-dirs:
       src
-  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts
+  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts GeneralizedNewtypeDeriving
   build-depends:
       aeson
     , base >=4.7 && <5
@@ -43,6 +43,7 @@ library
     , data-has
     , mtl
     , pcre-heavy
+    , string-random
     , template-haskell
     , time
   default-language: Haskell2010
@@ -53,7 +54,7 @@ executable hauth-exe
       Paths_hauth
   hs-source-dirs:
       app
-  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts
+  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts GeneralizedNewtypeDeriving
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
@@ -63,6 +64,7 @@ executable hauth-exe
     , hauth
     , mtl
     , pcre-heavy
+    , string-random
     , template-haskell
     , time
   default-language: Haskell2010
@@ -76,7 +78,7 @@ test-suite hauth-test
       Paths_hauth
   hs-source-dirs:
       test
-  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts
+  default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes TemplateHaskell ConstraintKinds FlexibleContexts GeneralizedNewtypeDeriving
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
@@ -87,6 +89,7 @@ test-suite hauth-test
     , hspec
     , mtl
     , pcre-heavy
+    , string-random
     , template-haskell
     , time
   default-language: Haskell2010

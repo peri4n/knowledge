@@ -1,10 +1,10 @@
 module Domain.Auth (
   -- * Types
   Auth(..),
-  Email,
+  Email(..), -- for tests
   mkEmail,
   rawEmail,
-  Password,
+  Password(..), -- for tests
   mkPassword,
   rawPassword,
   UserId,

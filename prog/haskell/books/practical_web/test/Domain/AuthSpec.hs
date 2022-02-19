@@ -7,7 +7,7 @@ import Domain.Auth
 authSpec :: IO ()
 authSpec = hspec $ do
 
-  describe "Auth" $ do
+  describe "Domain.Auth" $ do
 
     it "mkEmail" $ do
       mkEmail "test" `shouldBe` Left ["Not a valid email"]

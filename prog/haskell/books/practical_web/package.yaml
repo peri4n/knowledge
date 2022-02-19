@@ -28,6 +28,7 @@ dependencies:
 - aeson
 - mtl
 - data-has
+- string-random
 
 default-extensions:
 - NoImplicitPrelude
@@ -36,6 +37,7 @@ default-extensions:
 - TemplateHaskell
 - ConstraintKinds
 - FlexibleContexts
+- GeneralizedNewtypeDeriving
 
 
 library:
