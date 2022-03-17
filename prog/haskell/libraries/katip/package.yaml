@@ -1,0 +1,30 @@
+name:                katip-playground
+version:             0.1.0.0
+github:              "peri4n/knowledge"
+license:             BSD3
+author:              "Fabian Bull"
+maintainer:          "spam+github@fbull.de"
+copyright:           "2022 Fabian Bull"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+dependencies:
+- base >= 4.7 && < 5
+- katip
+- classy-prelude
+
+default-extensions:
+- TemplateHaskell
+- NoImplicitPrelude
+- OverloadedStrings
+
+executables:
+  playground-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
