@@ -6,5 +6,6 @@ Key take aways in programming
 - [Haskell](haskell/index.md)
 - [Python](python/index.md)
 - [Rust](rust/index.md)
+- [Java](java/index.md)
 - [Scala](scala/index.md)
 - [Typescript](typescript/index.md)
